@@ -63,12 +63,24 @@ last_part = {
 }
 
 
-df = DialogueFlow('start', end_state='end')
-df.local_transitions(introduction)
-df.local_transitions(intermediate)
-df.local_transitions(last_part)
+# df = DialogueFlow('start', end_state='end')
+# df.local_transitions(introduction)
+# df.local_transitions(intermediate)
+# df.local_transitions(last_part)
+#
+# df.add_macros(macros)
 
-df.add_macros(macros)
+def run_hackMIT(state, user_input):
+    df = DialogueFlow(state, end_state='end')
+    df.local_transitions(introduction)
+    df.local_transitions(intermediate)
+    df.local_transitions(last_part)
+    df.add_macros(macros)
 
-if __name__ == '__main__':
-    df.run(debugging=False)
+    next_state, response = df.run_step(state, user_input)
+    return next_state, response
+
+
+
+# if __name__ == '__main__':
+#     df.run(debugging=False)
