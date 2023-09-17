@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackBot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+  
+     <main>
+        <header>
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <h1>Ask me ideas about <span id="typed-output"></span><span class="cursor">|</span></h1>
+        </header>
+
+        <div id="chat-interface">
+            <div id="chat-box">
+                <div class="input-group">
+                    <input placeholder="Ask me anything!" type="text" id="input-field">
+                    <button class="submit-button" onclick="sendMessage()"><span>SEND</span></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+    <style>
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+      * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+
+    main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+            justify-content: space-between;  
+            height: calc(100vh - 80px - 40px);  
+        }
+
+        #chat-interface {
+            width:60%;
+        }
+    </style>
+  
+    <script src="script.js"></script>
+
+</body>
+</html>
