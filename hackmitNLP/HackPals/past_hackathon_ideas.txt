@@ -1,0 +1,385 @@
+How we built it: Noteation is a web app built using React and Typescript. Interfacing with the MindLink hardware was done on Python using AdHawk's SDK with Flask and CockroachDB to link the frontend with the backend. 
+
+How we built it: We used the Ad Hawk hardware and backend to record the eye movements. We used their Python SDK to collect and use the data in our mathematical models. From there, we outputted the data into our Flutter frontend which displays the metrics and data for the user to see.
+
+How we built it: Once you hit generate on the home UI, our frontend sends your text and video preferences to the backend, which uses our custom algorithm to cut up the text into key scenes. The backend then uses multithreading to make three simultaneous API calls. First, a call to GPT-3 to condense the chunks into image prompts to be fed into a Stable Diffusion/Deforum AI image generation model. Second, a sentiment keyword analysis using GPT-3, which is then fed to the Youtube API for a fitting background song. Finally, a call to TortoiseTTS generates a convincing narration of your text. Collected back at the front-end, you end up with a movie, all from a simple text.
+
+How we built it: We created this project using Python for the backend, and Flask, HTML, and CSS for the frontend. We made use of a BCI library available to us to process and interpret brainwaves, as well as Google OAuth for sign-ins. We made use of an OpenBCI Ganglion interface provided by one of our group members to measure brainwaves.
+
+How we built it: Frontend
+
+How we built it: We created this app using Swift for the backend and SwiftUI for the frontend. We are using ARKit for iPhone to help us create our position tracking model for various positions in the body as running natively drastically increases the performance of the app and the accuracy of the tracking. Using our position tracking model, we can calculate the relative angles of body parts and determine their deviation from an optimal angle. 
+
+How we built it: We built it with an RC car kit placed into a styrofoam sphere. The RC car was created with an Arduino and Raspberry Pi. The Arduino controlled the motor controllers, while the Raspberry Pi acted as a Bluetooth module and sent commands to the Arduino. A separate laptop was used with eye-tracking glasses from AdHawk to send data to the Raspberry Pi.
+
+How we built it: One of the biggest challenges we ran into in this project was integrating so many different technologies together. Whether it was establishing communication between the individual modules, getting data into the right formats, working with new hardware protocols, or debugging the firmware, Lifeline provided our team with an abundance of challenges that we were proud to tackle.
+
+How we built it: We used force sensing resistors to detect changes in force accounting for the presence or absence of the Brita. This information (analog) is passed to an Arduino which converts to a digital signal that is sent to our Raspberry Pi. We programmed primarily in Python and implemented functions to check when the Brita is empty based on the input data; if it is, we then trigger an alarm which prompts the user to refill. Lastly, if the Brita remains unfilled,  we use Twilio to send a message to the entire roommate group chat that someone needs to get on their Brita game!
+
+How we built it: We used the AdHawk MindLink eye-tracking classes to map the user's point of view, and detect where exactly in that space they're focusing on. From there, we used Google's Cloud Vision API to perform OCR and construct bounding boxes around text. We developed a custom algorithm to infer what text the user is most likely looking at, based on the vector projected from the glasses, and the available bounding boxes from CV analysis.
+
+How we built it: We used MongoDB, Express, React, Node, Typescript, Cohere, Google Cloud Platform, CICD, and AppEngine in order to create our final product. 
+
+How we built it: Using Solidity and the Hardhat framework, smart contracts were deployed to both a localhost environment and the Goerli testnet. A React front-end was created to interact with the smart contract in a simple and user-friendly way and enabled a connection to a metamask wallet. 
+A Raspberry Pi interface was created to demonstrate a proof of concept for the interaction between the user, electric vehicle, and charging station. While the actual station would be commercially manufactured, this setup provides a clear understanding of the approach. The Raspberry Pi hosted a Flask server to wirelessly communicate data to the web-app. An LCD display conveys the useful metrics so the user can rest assured that their interaction is progressing smoothly.
+
+How we built it: We went through many conversations to reach this idea and as a result, only started hacking around 8AM on Saturday. On top of this time constraint layer, we also lacked experience in frontend and full stack development. Many of us had to spend a lot of our time debugging with package setup, server errors, and for some of us even M1-chip specific problems. 
+
+How we built it: We built this application using the Flutter SDK (more specifically, motor_flutter), programming languages such as Dart & C++, and a suite of tools associated with Sonr; including the Speedway CLI! We also utilized a testing dataset of 500 user profiles (names, emails, phone numbers, locations) for the schema architecture.
+
+How we built it: homegrown was build using python, an arduino, and other hardware components. The different sensors connected to the arduino take different measurements and record them. They are then sent as one json file to the python script where they data is then further parsed and sent by text to the user through the twilio api.
+
+How we built it: We extracted the blinking data from the Adhawk Quest 2 headset using the Adhawk Python SDK and routed it into a Three.js app that renders the rooms in VR.
+
+How we built it: We built off of the existing API's from Zapata and Xanadu, using Python3 to bring together different resources and tackle the challenges.
+
+How we built it: Using python we built upon the Zapata QuantumBackend  API. Using advanced math and quantum theory to build an algorithms dedicated to lessening the noise and removing error from quantum computing. We implanted a new error migration technique with Pauli Sandwiching
+
+How we built it: We used cohere as the NLP generation engine. React for front end, firebase for server, and node for server.
+
+How we built it: We used cohere as the NLP generation engine. React for front end, firebase for server, and node for server.
+
+How we built it: The program was first written in Java, and the logic was then used to write the application made in Rust as well as the Discord bot made in Javascript.
+
+How we built it: For the front-end component of the website, we created our web-app pages in React and used HTML5 with CSS3 to style the site. We used the Google Maps API to generate a map with markers, directions, and other functionality. 
+ We built the backend using the Flask framework. 
+The backend was built using the Flask framework. We used a cockroachdb database to store and access user-specific and bike-specific information. 
+The product also comes with a hardware component to alert cyclers when they need to return a bike. It was built using Arduino Uno and Active Buzzer.
+
+How we built it: First, we modified a pre-existing program written by the Adhawk developer team with basic features that grants us access to a constant stream of relevant data. 
+
+How we built it: 
+Hack the North 2022
+
+
+How we built it: What the Health uses Next.js on the backend, a Flask API to deploy the machine learning models, HTML/Tailwind CSS/React for the frontend, and CockroachDB for frontend-backend integration and server connection. 
+
+How we built it: The hardware is a Philips Hue smart IoT lightbulb connected to a Hue Hub, which is in turn connected via ethernet to an EdgeRouter which ties into the apartment WiFi. It was extremely difficult to set up the networking in such adverse conditions but we managed to make it work with an unwise amount of adapters.
+
+How we built it: We used React to build the frontend, Google Cloud Speech-to-text API, and Co:here's natural language processing API to receive the adjusted and improve the dialogue.
+
+How we built it: Our application is created with React Native on the frontend, Node.js and Express.js for the backend, and MySQL for the database. 
+
+How we built it: The frontend is a web app built with React Native, which calls the Google Maps API and HyperTrack API to handle issues related to speed and slowing down or turning suddenly. The front-facing camera will face the road ahead and will capture images that will be sent to a machine learning model, which detects traffic signs and traffic lights. Using that information, the front-end will handle the logic for all rules related to traffic signs and traffic lights.
+
+How we built it: We built this application together using HTML, CSS (bootstrap), javascript, and figma. As we do not have access to Health Canada's database, we created fake data to test this with as well. 
+
+How we built it: After deciding on our idea, we used Figma for the prototyping. Then we created the frontend using HTML, CSS, JavaScript, and React. To connect it to the backend, we used Firebase.
+
+How we built it: The application was built using React for the front end and Flask for the back end. Because we use Flask for our server side, we decided the use CockroachDB for database management. Finally, we used Figma for UI and design prototyping.
+
+How we built it: We built it using Vue for the frontend and we used Cohere's API to generate feedback for the bullet points and an overall score for the resume.
+
+How we built it: We build the hardware using an Arduino Uno, an LSD display, a bluetooth module, a potentiometer, and a 220 ohm transistor. We connected all the components on a breadboard using wires. For the software component, we coded the Arduino on the Arduino program to have it display what the app sends to the bluetooth module. We coded the app component using MIT App Inventor's block coding software.
+
+How we built it: We used a React frontend alongside Node.js, Express and the co:here NLP engine API. Our database of choice was CockroachDB!
+
+How we built it: For the frontend, we started the conceptualization in Figma and then translated it into vanilla React.js, HTML and CSS in order to achieve the effects that we wanted. For the backend, we created a python script to generate the image by calling the stability AI API using the inputted parameters and saving the image. Another script was written in javascript for the co:here API and integrated into the backend as well. When the user gives prompts and clicks "Create", the information gets passed onto the APIs and the generated text and images are returned and displayed to the user.
+
+How we built it: We first considered how we wanted to store the corresponding mathematical symbols along with strings that users can easily type, and we figured that dictionaries were the best way to go, as they allowed us to store two values in pairs in a list and allows us to easily find which string corresponds to which mathematical symbol. We then needed to figure out how to print out the proper symbols, in which through some research, we discovered that C# supports strings formatted in Unicode. We then needed to solve how to be able to output the proper symbols in the program, which we spent a considerable amount trying to perform this task by detecting when a desired string was inputted then replacing such string with the corresponding mathematical symbol. We found this very difficult and couldn't think of a way to do this, mostly because the event sent by the textbox were received by the textbox first and couldn't be intercepted by the developer to act on the input before it reaches the textbox. However, this issue led us to come up with the solution of creating an output textbox in which the raw input goes into the first textbox and the intercepted and modified output goes out the second textbox. We then set up the dictionary to contain the necessary pieces of string that allows us to find where a mathematical symbol is required, and this is done by writing the program to suspect if a corresponding string to a mathematical symbol is coming, in which a string builds the upcoming corresponding string. If a match is found in the dictionary, then the second textbox outputs the correct mathematical symbol. Lastly, as we started to fill our dictionary with more and more symbols, we began to work on the visual appeal of the program, changing the shading and updating to the name of our program.
+
+How we built it: Our project was constructed using a combination of Flask, Next.JS, React, and CockroachDB. With the use of Mapbox, we first implemented an interactive map and location selector. In addition, we accessed an open-source database of global weather data specific to each region. With the raw software and data implemented, the next step was to correctly determine which alternative energy source would be more ideal for a given region; research was done to determine how specific weather conditions like temperature and humidity affected energy production, as well as quantitative figures for both cost per kWh and efficiency ratings. Finally, the user interface was improved by including accounts and saving user data.
+
+How we built it: We built this project in many different technologies, including BeautifulSoup for web-scraping, the Cohere API for NLP, Flask to host the server for consistent web-scraping, PyMongo to store data, and ReactJS + Tailwind for the frontend.
+
+How we built it: Our web app is primariy a react app on the front end and we used a combination of individual programming and extreme programming when we hit walls.
+
+How we built it: We built the client using React and MUI, with Markdown being used to render chat messages. The client is mainly responsible for rendering events that happen on the roundtable and reporting the user’s actions to the server through Socket.io. The server is built with Typescript and also uses Socket.io to establish communication with the client. The server is responsible for managing the game states of specific instances of plugins as well as controlling all aspects of the rooms.
+
+How we built it: rekindle was built from scratch using the main library React, which was integrated with co:here -- an NLP toolkit that facilitated machine learning for text summarization. Figma was used as the main design outline before coding was completed in HTML/CSS in React. Firebase was a database for user entries and response output. 
+
+How we built it: We did our coding on GitHub, using HTML, CSS, JavaScript, and React. Our group of 4 was assigned different roles which would allow our workflow to be smoother.
+
+How we built it: It's a native Android so we relied heavily on Android Studio. We used Figma and other tools for mockups and a couple of Android libraries to help with the UI. 
+
+How we built it: We used flask - a program we didn't know existed until just yesterday! We went through many planning and brainstorming sessions to end up where we are now.
+
+How we built it: Twilio API used for location tracking
+Firebase used for user database
+User interface made with ReactJS
+
+How we built it: The backbone of the project is Ethereum, and for the auctions, we tried to use Axelar so that consumers with any cryptocurrency can do the dealing. For the front-end we used React and Firebase firestore and cloud functions for the backend. Authentication is also kind of a niche idea, in which we are not using any email or phone number for signing in to the user. Instead, we are using only the Metamask wallet. Whereupon signing a message(nonce) the user can be authenticated.
+
+How we built it: In order to enhance the backend and UX, CNDR uses React, Figma (incl. CSS). We imported 3 APIs into our program. NASA’s EONET API is in charge of determining where wildfires are. The data is displayed using the Google Maps API. Statistics as well as longitude latitude calculations necessary to determine the wildfire risk radii are done mainly on OpenWeatherAPI.
+
+How we built it: We have a backend API written in Flask and hosted on Google Cloud Run. Our frontend is built on React Native and Typescript. Our database and storage is hosted serverlessly on Firebase. 
+
+How we built it: Our backend utilized Python calling Cohere's NLP API. Front-end was built using Figma and Tkinter GUI framework for Python.
+
+How we built it: Our website is built by using HTML and CSS, and it lists all of the recipes by the sorting method we listed above. The image ingredient identification is done using Tensorflow, where we trained a model to recognize different ingredients through image recognition. The recipes are all scraped from "Allrecipes," and the ingredients recognized are put into their "Include these Ingredients" filter, and then we filter these results by time and rating.
+
+How we built it: We used the Google News API and Cohere API to come up with the basis of our web scraping and summarizing. The Google News API was used to web scrape any news on a certain stock on the internet. Following this, the articles were fed through an AI model, which declared them as positive or negative and then moved on to the summarization step displayed on the frontend. This was then fed into the Cohere Article Summarizer API which summarizes multiple retrieved articles to only include important or necessary information. 
+
+How we built it: Sitting on top of a Linux instance, we built a web server and interface using Flask, Python, HTML, and CSS. Here, users can upload their point clouds to be processed and printed.
+
+How we built it: We powered up co:here API to read the input we scraped from past hackathon projects on Devpost. We fetch the information we need such as tools and descriptions. Then the output is shown in an interface designed by Figma and implemented by React.
+
+How we built it: We build it initially we jupyter notebook then build it further from there using QuantConnect to create a trading algorithm, which determines if to buy or sell based on both information from QuantConnect past data, as well as a confidence interval calculated by the jupyter notebook
+
+How we built it: 
+Hack the North 2022
+
+
+How we built it: We built the hardware part of the project using an Arduino; we connected all the sensors to the microcontroller with the help of breadboards to model our circuitry. For the software part of the project, we used a combination of HTML, CSS and JavaScript to create a web app to display the data aesthetically.
+
+How we built it: We used React, JavaScript, ChakraUI, and Bootstrap for the frontend. For the backend. we used  CockroachDB and Express,
+
+How we built it: In order to build our project, we first came up with how we wanted our application to look like and what features we would like to implement. That discussion lead us on deciding that we wanted to add an Augmented Reality feature on our application because we felt like it would be more immersive and fun to see summarized notes that you take in AR. To build the UI/UX and augmented reality of the app, we used Unity and C#. In terms of text summarization and text translation, we used Co:here’s and Google Translate’s API in order to achieve this. Using python, we were able to build algorithms that would take in paragraphs and either translate them, summarize them or even both. We decided to add the translation feature because in University, and also in real life situations, not everyone speaks the same language and having that option to understand what people are saying in your own language is very beneficial. 
+
+How we built it: All of our team members contributed their diverse skillsets to rapidly build our product in the following ways:
+
+How we built it: The News Shield platform is built with a python back-end and React front-end, using Flask to bridge both elements. The front-end allows the user to navigate pages and select overall news topics. When a topic is selected, key phrases are passed to the back-end, where a main function uses the key phrases, among other conditions, to search a database of news article titles using the NewsAPI.  The newspaper API copies the content from the identified articles, and the OneSimpleApi "Readability, Reading Time and Sentiment for Texts" endpoint is used to conduct text analysis. All of this information is then formatted and passed back to the website using Flask.
+
+How we built it: (too many banana pictures) + (too many human pictures) = a dataset of nearly 5000 images, which we used to train our image classification model. 
+
+How we built it: We connected the arduino to ultrasonic sensors which measure the distance to an object by measuring the time between the emission and reception. Once the arduino and ultrasonic sensors were connected, we coded it so that if the distance in cm is < 50cm, a buzzer would ring, alerting the person that there is a object nearby.
+
+How we built it: We used LLP models from Cohere to help recognize speech patterns. We used prompt engineering to manufacture summary statements, grammar checks, and changes in tone to deliver different intents. The front end was built using React and Chakra UI, while the back-end was created with Python. The UI was designed using Figma and transferred on to Chakra UI. 
+
+How we built it: For the eye-tracking software, we used AdHawk MindLink glasses to see the user's FOV and track when they blinked. We used PyQt as the desktop app renderer, Firebase as our image-saving database, and React for the UI to display these images.
+
+How we built it: We built this project with multiple goals in mind. We wanted to make use of as many sponsored services as sensibly possible, and we wanted to use our collected skills to the best extent. Therefore, we ended up choosing a CERN stack (CockroachDB, Express, React, NodeJS) along with Co:here to stretch our abilities to the point of improvement. Then we used Bootstrap to ensure the app’s scalability. We then used a javascript API that allows us to detect emotions through a webcam. The next steps came naturally and successively: we integrated the API into the main stack, found a method to scrape funny Reddit and Youtube videos, and worked frantically to put all of the puzzle pieces together, eventually coming to the entity known as Laugh-a-lot. 
+
+How we built it: We built a browser extension on chrome with a backend that uses the co:here api to scan user interaction on popular websites for toxic behavior. 
+
+How we built it: 💻 This project was done using HTML and CSS. Figma was utilized for prototyping earlier on in the hackathon. 
+
+How we built it: We created the app using JavaScript, node.js, express.js, React.js, CockroachDB, Firebase, Scaffold-eth API
+
+How we built it: All mechanical components were designed and iterated upon using Solidworks, and produced via rapid prototyping. These were integrated with a Raspberry Pi, an Arduino, a breadboard, photoresistor, LED, display screen, servo motors, and a camera to provide the functionalities of pill-e mentioned above. The app was developed and integrated with the hardware components of pill-e via Python and HTML/CSS, specifically Flask and Bootstrap. We stored the user's requirements for the pill dispenser in the app to use along side the mechanical components.
+
+How we built it: C++ and the SFML library
+
+How we built it: We built this app using RealityKit and SwiftUI on Xcode
+
+How we built it: The project, which was built in python, mainly utilizes three different frameworks, mediapipe, openCV, and pyGame. The frontend of the software was designed mainly using pyGame. This provides users with an intuitive layout and easy-to-use platform. In regards to the backend, our software's technical features are spotlighted by the use of the combination of OpenCV and Mediapipe. Mediapipe provided a crucial role in our project with its efficiency in analyzing human poses. OpenCV provided the means to convert the mediapipe landmarks into useful pieces of data which were useful in various technical features such as angle detection. 
+
+How we built it: Snowball leverages React js for all things frontend of the web application. MongoDB was used to build the backend database; storing user info, streak status, etc.
+
+How we built it: We used various libraries to put the project together. This includes speech recognition libraries and the Cohere API for NLP. The whole thing was written in Python
+
+How we built it: ToSort was built using Cohere's classification language models and embeddings. We created examples ourselves and passed that into the model to get custom predictions for our classes. We hooked these predictions up to the Todoist API and started labelling tasks based on the prediction confidence scores.
+
+How we built it: Connecting the Cohere API to our app and ensuring combability between all the platforms React supports.
+
+How we built it: The project is currently powered by an Arduino leonardo which consists of 4 ultrasonic sensors rotated by a servo. Throughout the event, we designed simulations, drawings, and computed complex mathematical computations for the wearable hat so that it is able to accurately detect any object in 360 degrees field of view. By going through these time-intensive processes, we were able to handle many edge cases in our hat ensuring that the hat followed a stable mechanical and software mechanism. 
+
+How we built it: Front End: Python, Discord API, Flask.
+
+How we built it: Frontend: React.js
+
+How we built it: Our main, desktop application to track the user’s eye movements, detect when the user is struggling with a passage, and display text simplifications / translations is built using Python with the Qt framework. The app leverages Google Cloud Vision AI to identify coordinates for each word on the screen, so when we detect confusion from the user (for example, if their eyes are fixated on an unfamiliar word), we cross-reference the location of the user’s gaze with the coordinates of each word to determine which word(s) to simplify / translate. 
+
+How we built it: Our current model for processing and "reversing" a given search query is rather inelegant, given that it only really returns the desired results when the query is phrased in a specific way. To improve upon this, we would love to grow our knowledge of the Co:here API system's processes for identifying key words and classifying text sentiment, so that we can create a system that would work for just about any contentious/two-sided statement worth its salt. There are also a whole host of other ways we'd like to use Co:here; for example, we considered using sentiment analysis to return an objective numerical value to the user expressing how many credible articles we found arguing for either side of the topic (as well as links to read up on both sides). A similar idea was considered for identifying an article's credibility based on its tone and/or the presence, or lack thereof, of buzzwords. Finally, if we should add one or both of the latter two sentiment analysis features, we'd like to explore further methods of visually representing the articles to make that data clear—for instance, representing each article as a node on a map and varying the colour from red to green based on how much in line the article is with your opinions, or varying the size based on how credible we judge the article to be.
+
+How we built it: I built the website with React, Hardhat, and Material UI.
+
+How we built it: While we were working with one of the API for scraping, the API gave us a a very large JSON file with tons of data, most of it being useless to us. To only grab the specific data fields we needed, we worked on trying to filter the JSON file, loop through it and only grab the necessary parts, etc. With persistence and patience, we thankfully figured out a way to get the required fields.
+
+How we built it: We learnt stuff about Web3 and how it works and how decentralized platforms work
+
+How we built it: For the frontend, we first built a basic front end skeleton using typescript React and Vite. We then incorporated components from Mantine.dev to construct the sections of our user interface from file upload, text input, and tool selection. Using an embedded HTML Canvas as our image editor, we also implemented front-end algorithms for our tools in order to select, move around, and fill in space to construct our blend bitmask. Finally, we sent the input data to our Flask backend to produce and display the blended image. 
+
+How we built it: The base of our project was inspired by AdHawk’s Mindlink glasses. Using Mindlink, we were able to extract the horizontal and vertical coordinates of the gaze. In combination with those position values, and predetermined zones (10 degrees on each side of origin), we programmed the Arduino to a buzzer and LED. For crash detection, we used an event, “Blink”, which will detect whether a blink has been made. However, if a blink is not preceded by a second one in 45 seconds, the program will recognize it as a fatal injury, triggering Twilio to send text messages to emergency services with accurate location data of the victim.
+
+How we built it: Happy Hours was built using a collage of different APIs and frameworks. The primary component of Happy hours is natural language processing (NLP) to transform things you want to do into events and locations. Happy Hours uses the Co:Here API to transform desires such as “I want to eat shawarma” into practical places that you can attend. 
+
+How we built it: We built our game using Unity, the Adhawk Meta Oculus Quest 2, and the Adhawk SDK. We began this project with a crippling lack of knowledge, however with a lot of help from Adhawk (Thank you Nick!!!), we were able to learn and build a game in VR. We started with basic ball and hand interactions, and built it into a real game. We put together a functional VR game through botchy hacks on hacks. By staying up until 5 am and mashing our keyboards we 
+
+How we built it: Initial wireframes incorporating UX/UI design principles were created using Figma. The frontend was built with ReactJS, while the backend was written with Python and deployed with Flask.
+
+How we built it: glance is a web app created using the react.js framework for our frontend and node.js for our backend. We leverage co:here's classification library to classify ingredients into categories and the tesseract image to text library to convert the ingredient picture into useable text. 
+
+How we built it: This web application was built with Express.js for the backend and vanilla HTML/CSS/JS for the frontend.
+
+How we built it: Through Google App Script which allows access to all the G-Suit docs where we can record and send dad jokes whenever. The script is set to run once a day for a daily dad joke.
+
+How we built it: Take Knote is powered by the MERN stack:
+
+How we built it: To verify whether our idea would benefit other users, we did some research and found data regarding the effects of music on individuals’ walking behaviours, where we found out the optimal running tempo for synchronization with music was 120bpm to 140bpm.
+
+How we built it: Prior to HTN, no one on the team had ever used any of these APIs before, so there was quite a steep learning curve for every member of our team. 
+Additionally, fine-tuning the eye tracking software to properly track the coordinates of our gaze proved to be quite difficult. We had to employ many different methods to track and record the coordinates, which involved a great deal of trial and error. 
+Cropping the image also proved to be surprisingly difficult. We had to figure out how different 3D coordinate systems acted on a 2D image, and how these interactions could help us crop out intended blocks of text.
+Finally, we utilized a variety of different APIs, to help with language identification and translation. To map all of the various features together, members of our team had to surf through mountains of documentation and YouTube tutorials!
+
+How we built it: The website was built in React with the help of Material UI. To generate text using co:here's API, we ask the API to continue the story with certain parameters that we provide.
+
+How we built it: Our app makes use of the co:here API to summarize text using our own trained model made from sample terms of service texts. The backend is written in python, running a Flask web server. It can be run directly in your browser, where the user is able to input their terms & conditions as text. The frontend is written using HTML, CSS, and JavaScript for a clean and user friendly experience.
+
+How we built it: 1. Wire-framming and Front-end 
+As a medium of use, it was necessary to build a front-end component to our application as a way to prompt the user to record input, and to relay a specialized playlist based on their mood. Both preliminary and high-fidelity wireframes were designed and validated in Figma before using React.js to bring our ideas to light. 
+
+How we built it: The core of the generation process is a Generative Adversarial Network (GAN). Two deep learning models, a generator and classifier, compete against one another in a zero-sum game to generate images that are indistinguishable from real images according to the classifier.
+
+How we built it: The process of our creation began with an idea - to create a digital product/service for something meaningful to us and after a whole series of discussions, we agreed upon only-paws. The next step was to decide on a framework and the libraries from HTN that we were going to use. NEXT JS was clearly the winner because of the convenience with routing. We agreed upon using CockroachDB as the star of our application as it is very efficient and relevant for only-paws to keep the data about our users.We had more discussions about how much we wanted to do for the app and how much we were willing to settle for considering the relatively small timeframe of the hackathon. We still decided to proceed with the idea and delegated the work in between members based on their experience level and skills. Front-end, back-end, design, libraries and assistance work was divided. Everyone started working on their designated portion but we often kept on checking on and helping each other.  There were many times the documentation was discussed as a group or someone who had some experience with a particular technology, shared it with the rest of the group. The project really started coming together on the third day or should I say  9 hours before submission when a lot of our frontend and backend was done. The rest of our time was devoted to integrating the back-end to the front-end as well as polishing the UI and enhancing the user experience. Then it was time for testing, deployment and finding urls
+
+How we built it: The backend for the decentralized blockchain was built on Scaffold-ETH, where it allowed to easily tokenize our data and create an NFT out of pictures. The rest of the web application was built on React.js, written in Typescript. The frontend was fleshed out using Material UI and Socket.io to transfer data between each other.  
+
+How we built it: The base for the image processing functionality (edge-detection and color blocking) were Python, OpenCV, numpy and the K-means grouping algorithm. The image processing module was hosted on Firebase. 
+The end-user experience was driven using Unity. The user uploads an image to the app. The image is ported to Firebase, which then returns the generated images. We used the Unity engine along with ARCore to implement surface detection and virtually position the images in the real world. The UI was also designed through packages from Unity.
+
+How we built it: Godot and gdscript baby
+
+How we built it: Wizard Cats was built using Phaser 3 and Firebase.
+
+How we built it: We harnessed reinforcement learning strategies in Python to have Mr. Goose learn from every successful attack of a Waterloo student. Using libraries such as Tkinter, NumPy, Sys and Pandas we were able to display a visual design with a grid, walls, grass and cages. 
+
+How we built it: We used React, Cohere API and Javascript to build our webpage.
+
+How we built it: Our product is split into two sections, software and hardware. 
+
+How we built it: It was build in BSL in DrRacket, relying on predicates.
+
+How we built it: We built it using we Javascript, react, express, mongodb, and solidity. 
+
+How we built it: We used the package Ren’py to implement our code which was really easy to use and learn quickly. Ren’Py is a script language written in Python and it was a great choice for beginners like us.
+
+How we built it: 
+Hack the North 2022
+
+
+How we built it: We built MedNow using the Expo platform to develop a React Native app, taking advantage of its cross-platform development capabilities. Thus, MedNow runs on both iOS and Android devices. Additionally, our UI/UX was designed using Figma, where we created mockups depicting the app’s visual design and well as user flow. Finally, throughout development, we collaborated using Github.
+
+How we built it: We used Co:Here's API on Natural Language Processing to create an artificial inteligence that was fed study methodologies using Co:Here's Playground. We also developed a statistical framework for study analysis, done through a thorough medical literature review. Then, we developed our 2nd AI through Co:Here's API, to analyze the results and metrics. To finalize, the process was integrated using Python 3.9 and the slides and concept art were sketched on Canva
+
+How we built it: 
+Hack the North 2022
+
+
+How we built it: First we set goals and expectations for the controls and mechanical aspects of the project’s design. We separated our team into groups of two, one for the controls and the other for the mechanical, then prioritized and delegated responsibilities accordingly. For the mechanical aspects, we began with preliminary sketches to rapidly develop several possible designs. After discussion, we settled on a specific design and began CAD. We went through multiple design iterations as new problems arose. As construction finished, we made numerous changes to our original plan because of unforeseen issues, such as failures in 3D printing. 
+
+How we built it: In order to create our best work, we played to the strength of each of our team members. The backend connection and analysis algorithms were developed using Python, and the frontend was designed using Figma and implemented using JavaScript and Processing. Flask was used to bridge our front-end and back-end components together.
+
+How we built it: We built our app by using React for the frontend specifically the chakra-ui React library. For the backend we used Flask as our local server and we used AssemblyAI's audio intelligence to provide our service with insightful data that would be used in our attempts to provide a more convenient diary or self care site.
+
+How we built it: We used next.js and a variety of different style options (css, bootstrap, tailwind.css) to make a "dynamic" website.
+
+How we built it: TxtScribe was built by me, over the weekend, with Python, Flask, and HTML5. I leveraged the power of google cloud to run the handwriting detection algorithm, which is then drastically enhanced with the power of cohere's APIs. I also use cohere's NLP Generation API to generate a quick summary of the text.
+
+How we built it: Combined HTML, CSS, javascript, Bootcamp, node.js, browserify and the co:here API in order to build this project.
+
+How we built it: We used JavaScript, HTML, and CSS to code our habit helper, utilizing various resources to learn how each component fits together. For fun/challenge, part of the project was coded directly off of GitHub without the use of external IDEs. 
+
+How we built it: We built Hackgenic using only HTML, CSS, and JavaScript.
+
+How we built it: Raven was built using the AdHawk Mindlink and their proprietary API that accompanies it. Their API allowed for focus, gaze, and eye tracking, which allows us to easily situate our user in their world, and identify the objects around them. This information is then piped through the Tesseract OCR algorithm, which returns a corpus of text that the user is trying to read. Finally, this text goes through the PyTTS text-to-speech engine, which translate the written word into the spoken one. 
+
+How we built it: First, we used the yt_dlp library to download youtube videos of celebrities as mp4 and mp3 files given a link. Using AssemblyAI's transcript tools to get the transcript from the YouTube videos into a json file, AND we'll separate the speakers in a video if there are multiple, so we can ensure the clip we're taking for the merge video will just be the celebrity. Next, we used cohere API prompt generator for extra funny prompts. Afterward we'll match the prompt words into the transcript and extract the seconds where the celebrity says the phrase. Afterward, we trim the video to that moment. Do this for every word in the prompt, merge it, and you have your final video!
+
+How we built it: We used Flutter and Edamam API for our app.
+
+How we built it: We used AssemblyAI to convert the speech to text and then to summarize the text and generate chapters. The frontend was developed using React and the web app was deployed on GitHub Pages.
+
+How we built it: The app itself is an Android app that integrates with the HyperTrack API to repeatedly update the user’s location and compare it to a target (the bounds of the restaurant). Then, when the app receives the response from the API that it is within the bounds, we automatically open the menu in their browser.
+
+How we built it: We used pygame to create the game and assembly ai for the speech recognition.
+
+How we built it: Once we had our idea the first step was looking into how all of the technologies worked to ensure that it would all work together. After thinking of a general plan for how we would build out the project we split up into frontend and backend teams and got to work. We settled on using Next.js for the frontend due to our previous experience with it and the optimizations over React.js. We used Tailwind to style various components of our webpages.
+The backend is comprised of a Serverless CockroachDB database which was linked to a Express.js engine. We decided to use CockroachDB instead of other database services because of it is a distributed database system that is easily integrable with an API.
+As a bonus we wanted to use co:here to provide useful insights to the company while being able to make the feedback experience short and seamless for the user. Our NLP model automatically sorts the feedback into categories that can be worked upon by the company.
+
+How we built it: Cohere's natural language processor was trained through multiple iterations of input words and phrases to fine tune the output style. We want the resulting prompts to be interesting and influenced by the input while also bringing something new to the table. These outputs are also classified into nine categories: adventure, art, food, hate, language, love, nature, technology, and miscellaneous using Cohere’s classifying abilities. The psycopg2 Python library was used with SQL for CockroachDB. This database stores all the outputs and also puts them in their separated categories. The favourited prompts are also put in their own category to further train the AI. Node.js was used for testing and training. HTML, CSS, and JavaScript, are used to create the website to display our work. Figma and Adobe Illustrator were used for UX/UI design to ensure the design is aesthetically pleasing and convincing. We prioritize our users getting a clean and painless experience with our visual design. Finally, Github Pages is used to host this website.
+
+How we built it: Using the Kinect C# SDK we extracted a human wireframe from the sensors and performed calculations on the different limbs to detect improper form. We also used the .NET speech libraries to create an interactive "trainer" experience.
+
+How we built it: Tempestuous Turrets is built using the Unity game engine and C#. We wanted to create something unique, but also special to us, which is why we created all of the art assets ourselves during the hackathon. We started simple, with just turrets that rotate and shoot projectiles. Then, we let our imagination take us through creating fun, hilarious, and exciting maps with a variety of obstacles. At last, we used Github Pages to host our WebGL Game and get our domain name from domain.com.
+
+How we built it: We used tools such as Serp API and web scraping to query job sites for positions, then used the embed endpoint of the Cohere API to analyze the job description. We take two lists of strings from the user as input, a list of positives and a list of negatives. By comparing the embeddings of each string in these lists with the description with cosine similarity, we can use natural language processing to understand how much the description matches with each of the user's criteria. We use these results to produce a rank, and display the highest ranked jobs to the user for easy application.
+
+How we built it: We created Track Your SACK using a combination of HTML, CSS, Bootstrap for the front end, as well as embedding Hypertrack's services for the luggage tracking.
+
+How we built it: We used HyperTrack’s API to get the user's geoJSON location which includes all the information we need.  We also used Flutter and Dart to build the mobile user interface.
+
+How we built it: Frontend: React, JavaScript
+Backend: Python, Flask
+
+How we built it: The backend was built with NodeJS, ExpressJS, and MongoDB, with mongoose for schema validation. For the frontend, we used Angular and Ionic components as well as Capacitor to ultimately translate the web app we've made into a mobile app. We also have authentication through JWT. A mockup was also created with Figma. 
+
+How we built it: The front-end of the web application is built using React. Upon pressing the record button, the application makes a call to AssemblyAI's Speech-to-Text API to begin real-time transcription of the audio. The client-side then stores chunks of the text to pass into our custom endpoint built using Python and FastAPI. This API serves as a wrapper around Cohere's API to allow for custom tweaking of the model's parameter for optimal results.
+
+How we built it: We created our project with React and had two main pages (different routes). The first page (Home) contains the title and a search box which receives the data from the user and returns the musical pieces that have matching results. To get this info, we needed a database. Originally, we planned to use CockroachDB, but ended up using a JSON file as our backend since we were running out of time. The second page is a user guide to our webapp with a link to our GitHub repository, if the users choose to view the source code.
+
+How we built it: We used the DJI Trello drone and SDK to transport pills to and from the pharmacy. In our proof of concept, the drone travelled between points A and B in the drone room. Our attachments were modelled with the shape of the drone's body in mind, and we considered whether the propellers would interfere with it, should we have chosen to have it on the top.
+
+How we built it: The Raspberry Pi is the central hub which is responsible for processing all sensor data. The Pi interfaces with the IMU and runs a Kalman Filter. The Kalman Filter, which I specifically tuned, makes sure that the raw IMU data is as smooth as can be. With the filter turned on, jerky hand movements are stabilized in the 3D visualizer. 
+
+How we built it: We built Civility using Next.js, React, Material-UI, Express.js, and of course, the Cohere API. We used Figma for the early mockups of the design, CSP (somewhat scuffed replacement to Adobe Illustrator) for the logo, and Git for version control and collaboration. We were able to 'train' models in Cohere using external datasets we found online: one which classifies Twitter tweets as toxic or not, and one that labels political Reddit posts with a particular political alignment. More specifically, we were able to perform text classification using the classify endpoint and semantic search with the nearest neighbour search algorithm. Both methods produce a certain percentage of being 'correct' in regards to how accurate the label they attach to the example/input might be, which is also a statistic we show. For example - and you can try this for yourself - 'bruh' is 79% likely to be used in an offensive manner online (obviously).
+
+How we built it: We built this with a full stack system, using React and Django. It was made with a SQL database for keeping track of all of the users and projects integrated into our system, and Django to process requests from the frontend. React is the frontend, which is quite dynamic and creates simplicity in the code.
+
+How we built it: Our front-end was created with HTML/CSS and Javascript. This was connected with a Python Flask backend. We also integrated the HTML Geolocation API, the NREL (National Renewable Energy Laboratory) developer network API, and the Google Maps Geocoding API.
+
+How we built it: We used Figma to create a visual representation of Sanguine. Using Python and the co:here API, we programmed the basic backend of the website. Our skills and time were limited, but we were able to make a code that retrieves news articles using News API and prints out specific up to date articles based on what the user inputs.
+
+How we built it: Learnt and tried to implement an MVP as soon as possible throughout the Hackathon!
+
+How we built it: GMM algorithm in Python, PAM module in C, and some interfacing in the middle.
+
+How we built it: We used Numpy and OpenCV to create the Sketchbook image tracing. The OS library is used to take the video and split it frame by frame and write the images in order into a file, the it takes the images in the file and renders them into the final video. 
+
+How we built it: We built this website in the Node.js environment using Typescript, React.js, mongodb, express.js and Figma to design our website. 
+
+How we built it: We designed our product on Figma and prototyped it’s key interactions. A ReactJS frontend was made to implement a file upload function and a display gallery.
+
+How we built it: Getting User Input: Speech-to-Text with AssemblyAI, Web App with Express.js
+DrawBot first creates a transcription of speech input using AssemblyAI’s real-time speech-to-text API. Our web app allows the user to record their desired image prompt, then automatically uploads and transcribes their speech using AssemblyAI. It then sends the final formatted image prompt to be used with Stable Diffusion, along with important keywords to ensure that the generated image would work well with the rest of our pipeline.
+
+How we built it: We built this primarily using an Arduino, the Arduino software (coded in C++) and an ultrasonic distance tracker in order to implement real-time collision detection. Additionally, in order to develop the robot, we needed to 3D print the wheels and create a chassis in order to contain, house, and support all of our components. 
+
+How we built it: We use Cohere's API to integrate NLP to train a model and compare similar text in meaning. We also used React JS for the frontend demo and Flask as the backend to connect the frontend to the language processing code.
+
+How we built it: We used react.js, planned to use CockroachDB to save user info, and store game information. Also used Co:here to generate dialogue with other virtual uwaterloo students.
+
+How we built it: We used a chrome extension to create this app. It utilizes HTML, CSS, JS. HTML and CSS are used to display the content to the user, while JS was used to provide functionality to the elements presented in the HTML and CSS. We began by building a basic HTML template to test things on, before implementing both features and applying them to our full HTML and CSS presentation.
+
+How we built it: Maybe implement a similar concept on React. 
+
+How we built it: To run the backend, we use NodeJS and Express to manipulate given data to make calls to the Cohere API. This made the logic and error handling relatively simple, as our complementing frontend was built with HTML, CSS, and Typescript. The audio recordings that were taken in were converted to text using Assembly AI, and then the brains of λlbert were made using the Cohere API.
+
+How we built it: We built Spot with React, AWS, GraphQL, Typescript, Amplify, and DynamoDB . We used Amplify throughout as it helped with user authentication, creating GraphQL APIs, and setting up our database.
+
+How we built it: The smart shoe used an Arduino Uno to calculate foot velocity in real-time, then transmitted the data to an ESP32 chip via serial communication (UART protocol). Then, the ESP32 POSTs the data to an endpoint on our deployed Express app, which stores it in CockroachDB. To actually calculate velocity, we have a 3-axis gyroscope and accelerometer (MPU6050) attached to the Arduino. We use the gyroscope to remove the effect of gravity from the acceleration by applying a rotation matrix, then we integrate the acceleration to get the velocity. All components reside in a laser-cut board that can be clipped onto a user's laces.
+
+How we built it: There are so many features in the future of Rent2Be!
+
+How we built it: Using the onboard camera of the AdHawk MindLink, we pass video to the openCV machine learning algorithm to classify and detect people (pedestrians) based on their perceived distance from the user and assign them unique IDs. Simultaneously, we use the AdHawk Python API to track the user's gaze and cross-reference the detected pedestrians to ensure that the driver has seen the pedestrian.
+
+How we built it: React Native, Express, SQL server on CockroachDB, Postgresql, AssemblyAI, Cohere API
+
+How we built it: We built this project on the Repl-It online IDE to ensure effective collaboration among team members. We coded the application in the python program and implemented it in the Tkinter GUI framework as a prototype of the planned application. We also used Figma to create our intended UI for the final application.
+
+How we built it: We first created the scissor lift, by using the materials provided to us and going to Home Depot for other materials that were needed. We then laser cut the plastic materials to fit screws and put nuts over them so it is stable. We then attached the machine to the cardboard. Afterward, we wrote the Arduino code to perform the release of the scissor lift and finally added the Arduino and motor to the cardboard.
+
+How we built it: Developing the backend of Sling actually required two NLP models both using sentiment analysis. The first was used to develop a training dataset of slang terminology to be used for training the second. This was done by scraping over 60000 words and definitions from Urban Dictionary. The highest ranked definition was then used as the de facto definition upon which to conduct sentiment analysis. The sentiment analysis score of the definition was then used as the sentiment analysis score of the word, thus creating a thorough dataset of slang terminology. A second sentiment analysis model was then trained upon this dataset. 
+
+How we built it: We built a Figma plugin using Typescript, which sent prompts to a GBC which in turn sends them to Stable Diffusion. 
+
+How we built it: To build the framework for the bot, discord.py was used to communicate with the Discord API. To determine the actual answer for the audio file, AssemblyAI's voice-to-text transcript API was used. Finally, to store the user's progress, Cockroach Database was used.
+
+How we built it: To start, we created wireframes using Figma. Once we decided on a general layout, we built the website using HTML, CSS, Sass, Bootstrap, and JavaScript. The AssemblyAI Speech-to-Text API handles the processing of the video/audio and returns the information required for the transcript and summary. All files are hosted in our GitHub repository. We deployed our website using Netlify and purchased our domain name from Domain.com. The logo was created in Canva.
+
+How we built it: First we used public data on recipes, prune it through python to create a readible dataset.
+We then create a fine tuned model using co:here for training.
+Finally, we create a react front-end, and using a FastAPI backend to interact with our co:here model in order to suggest a proper recipe to users!
+
+How we built it: The project consists of three major components:
+
+How we built it: The design of the website was prototyped in Figma. From there, the front end is built using React JS. We used CockroachDB to store the data and we used express.js to connect the frontend to the backend.
+
+How we built it: We built an API, back-end database, and front-end UI via web to make our game work.
+
+How we built it: We built it with a React Framework using mainly JavaScript and Python.
+
+How we built it: The website was built using HTML, CSS, and Javascript with React as a framework. We used a simple API developed to gather NBA stats, https://www.balldontlie.io
+
+How we built it: We used HTML for the extension popup, and JavaScript to interact with Chrome's API, Manifest. Manifest was able to gather the current URL the user is on, and by manipulating the string, we are able to convert it into the company's name. By gathering the time step of each iteration, we are also able to calculate how long the user stays on each tab.
+
+How we built it: We built Tenacity with Vite and Create React App with the AssemblyAI API. We used Tailwind for styling and react-router for routing. 
+
+How we built it: Zinc - ANS (Server Side) was built with Django and Django REST Framework, alongside an Android Flutter Application integrated with Firebase Cloud Messaging. A Flask server was also used to mimic an enterprises's, who's servers will be actively listening for a webhook from ANS upon address change.
+
+How we built it: Our backend was built using FastAPI, Python, and Pipenv for the python environment. We used the Cohere API to generate a summary of one's chrome history. The Chrome browser extension was built using axios, javascript, html, and css. 
+
+How we built it: The program is ran on Javascript, and the Example is ran on a HTML5/CSS website.
+
